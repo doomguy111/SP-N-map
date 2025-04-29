@@ -29,25 +29,12 @@ try:
 except LookupError:
     nltk.download("stopwords")
 
-# Add logo and app description
-logo_url = "https://assets.zyrosite.com/m5KLvqrBjzHJbZkk/soypat_logo_white_bg-A0x11BXpQ0Tr9o5B.png"
-website_url = "https://www.soypat.es"
-
-st.markdown(f'''
-    <div style="text-align: center;">
-        <a href="{website_url}" target="_blank">
-            <img src="{logo_url}" style="max-width: 100%; height: auto;">
-        </a>
-    </div>
-''', unsafe_allow_html=True)
-
-
 st.title("n-gram analysis tool")
 
 st.markdown(
     """
     **Description:**
-    To use this tool, go to the Bulk Operations section in the Ad Console and request a file like the one shown in this [screenshot](https://assets.zyrosite.com/m5KLvqrBjzHJbZkk/ngram_bulk_needs-YrDqqxMLQrtekppJ.png).
+    To use this tool, go to the Bulk Operations section in the Ad Console and request a file.
     Upload the file below to perform n-gram analysis.
     """
 )
